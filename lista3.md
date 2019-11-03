@@ -72,6 +72,19 @@ W sytuacji gdy wspieramy lidera sondaży, aby osiągnąć sukces powinniśmy uni
 
 Przez to że w podpunkcie drugim manipulujemy większą liczbą głosów, wydawać by się mogło że nasze szanse na modyfikacje w podpunkcie pierwszym są znikome. Nic bardziej mylnego. W zadaniu pierwszym znjaduje się tabela przedstawiająca liczbę głosów, która zadecydowała w niektórych okręgach i są to liczby na tyle małe, że mogą zostać zmienione przez jeden lokal wyborczy. W przypadku takiej zmiany mamy jawny wpływ na liczbę mandatów uzyskanych przez daną partię, lecz dalej w przypadku wyborów 2019 jest to maksymalnie jeden mandat.
 
+#### Tabela wygenerowana na podstawie danych z zadania 1
+okręg wyborczy | partia	| liczba głosów
+-|-|-
+18	Siedlce	  |KON | 682
+4	 Bydgoszcz	|KON | 1104
+20	Warszawa	|KON  |1129
+12	Kraków	  |LEW  |1276
+19	Warszawa	|LEW  |1820
+35	Olsztyn	  |KON | 2618
+
+Przy założeniu że do głosowania przystąpiło 18 mln osób, a lokali wyborczych było 27 tysięcy, otrzymujemy średnią liczbę głosów w pojedyńczym lokalu równą 660 głosów. W przypadku gdy kontrolujemy troszkę większy lokal, możemy zmienić wynik wyborów w okręgu 18.
+
+
 ## Zadanie 3
 ### Polecenie
 Zaproponuj zmiany w sposobie przetwarzania wyników, aby zapobiegać zaproponowanym przez Ciebie atakom.

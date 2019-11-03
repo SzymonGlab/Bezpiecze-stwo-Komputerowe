@@ -82,7 +82,7 @@ okręg wyborczy | partia	| liczba głosów
 19	Warszawa	|LEW  |1820
 35	Olsztyn	  |KON | 2618
 
-Przy założeniu że do głosowania przystąpiło 18 mln osób, a lokali wyborczych było 27 tysięcy, otrzymujemy średnią liczbę głosów w pojedyńczym lokalu równą 660 głosów. W przypadku gdy kontrolujemy troszkę większy lokal, możemy zmienić wynik wyborów w okręgu 18.
+Przy założeniu że do głosowania przystąpiło 18 mln osób, a lokali wyborczych było 27 tysięcy, otrzymujemy średnią liczbę głosów w pojedyńczym lokalu równą 660 głosów. W przypadku gdy kontrolujemy większy lokal, możemy zmienić wynik wyborów w okręgu 18.
 
 W scenraiuszu anuloawnia głosów zakładamy że w jednym okręgu jesteśmy w stanie anulować 4,5 tysięca głosów. Zakładamy że wszystkie okręgi są takie same, więc liczbę wszystkich możliwych do unieważnienia głosów dzielimy przez 41 (liczbę okręgów). W wielu okręgach jest to liczba pozwalająca na zmianę ugrupowania które otrzyma ostatni mandat.
 

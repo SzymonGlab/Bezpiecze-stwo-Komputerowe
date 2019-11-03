@@ -5,7 +5,7 @@
 ### Polecenie
 Zapoznaj się ze skryptem z https://github.com/filipzz/dhondt i  sprawdzić jakie dane otrzymamy dla innych wyborów wykorzystujących metodę d'Hondta.
 ### Rozwiązanie
-Metoda D'Hondta – metoda stosowana do podziału mandatów w systemach wyborczych opartych na proporcjonalnej reprezentacji z listami partyjnymi. Polega on na obliczaniu ilorazu   , gdzie G – to liczba głosów oddanych na partię w danym okręgu , a i to kolejne liczby naturalne. Potem sortujemy otrzymane ilorazy i m pierwszych ilorazów (gdzie m to liczba mandatów w danym okręgu) otrzymuje mandaty. Każda partia otrzymuje tyle mandatów ile ma ilorazów znajdujących się w puli.
+Metoda D'Hondta – metoda stosowana do podziału mandatów w systemach wyborczych opartych na proporcjonalnej reprezentacji z listami partyjnymi. Polega on na obliczaniu ilorazu  I = G/i , gdzie G – to liczba głosów oddanych na partię w danym okręgu , a i to kolejne liczby naturalne. Potem sortujemy otrzymane ilorazy i m pierwszych ilorazów (gdzie m to liczba mandatów w danym okręgu) otrzymuje mandaty. Każda partia otrzymuje tyle mandatów ile ma ilorazów znajdujących się w puli.
 W moim rozwiązaniu zbadałem wyniki z 2011.
 
 #### 2011 - WYBORY PARLAMENTARNE
@@ -82,9 +82,9 @@ okręg wyborczy | partia	| liczba głosów
 19	Warszawa	|LEW  |1820
 35	Olsztyn	  |KON | 2618
 
-Przy założeniu że do głosowania przystąpiło 18 mln osób, a lokali wyborczych było 27 tysięcy, otrzymujemy średnią liczbę głosów w pojedyńczym lokalu równą 660 głosów. W przypadku gdy kontrolujemy większy lokal, możemy zmienić wynik wyborów w okręgu 18.
+Przy założeniu że do głosowania przystąpiło 18 mln osób, a lokali wyborczych było 27 tysięcy, otrzymujemy średnią liczbę głosów w pojedyńczym lokalu równą 660 głosów. W przypadku gdy kontrolowany lokal byłby nieznacznie większy niż średni, możemy zmienić wynik wyborów w okręgu 18.
 
-W scenraiuszu anuloawnia głosów zakładamy że w jednym okręgu jesteśmy w stanie anulować 4,5 tysięca głosów. Zakładamy że wszystkie okręgi są takie same, więc liczbę wszystkich możliwych do unieważnienia głosów dzielimy przez 41 (liczbę okręgów). W wielu okręgach jest to liczba pozwalająca na zmianę ugrupowania które otrzyma ostatni mandat.
+W scenraiuszu anuloawnia głosów możemy anulować 4,5 tysięca głosów. Zakładamy że wszystkie okręgi są takie same, więc liczbę wszystkich możliwych do unieważnienia głosów dzielimy przez 41 (liczbę okręgów). W wielu okręgach jest to liczba pozwalająca na zmianę ugrupowania które otrzyma ostatni mandat.
 
 W tym przypadku istotnie mamy większy wpływ na wynik wyborów, lecz wiąże się to także z działaniem w większej grupie. O ile w zadaniu pierwszym potrzebowaliśmy maksymalnie kilkudziesięciu ludzi do kontorli lokalu, to w przypadku jednego przedstawiciela w każdej komisji jest to ponad 27 tysięcy osób.
 
@@ -97,7 +97,7 @@ Przykładowym zabezpieczeniem przed zmianą wyników po przejęciu lokalu może 
 
 Na pewno przed takim przejęciem dobrym zabezpieczeniem byłoby także wyrywkowe kontrolę oraz umieszczanie wartowników z niezależnych organizacji, którzy sprawowali by pieczę nad porządkiem w danej komisji.
 
-Wyniki można by także było porównywać z wynikami z zeszłych lat, aby odkryć anomalie, które mogłyby sugerować oszustwo.
+Wyniki można by także było porównywać z wynikami z zeszłych lat, aby odkryć anomalie, polegające na znacznych zmianach poglądów wśród mieszkańców danego okręgu co  mogłyby sugerować oszustwo.
 W przypadku fałszerzy we wszystkich komisjach potrzeba by wprowadzić specjalne procedury, które utrudniałyby unieważnianie głosów. Na przykład mogłoby by to być podwójna weryfikacja unieważnionych głosów przez dwóch różnych członków komisji.
 
 Inną formą kontroli mogłoby być prowadzenie statystyki członków komisji którzy unieważnili głosy i w przypadku odstępstwa od średniej dany członek zostaje dokładnie sprawdzony przez odpowiednie służby.

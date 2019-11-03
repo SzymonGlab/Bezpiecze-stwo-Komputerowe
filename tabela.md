@@ -1,5 +1,8 @@
-nr okregu | nazwa  |  PO |  PSL |  PiS |  RPL |  SLD |  MN
+```
 
+```
+nr okregu | nazwa  |  PO |  PSL |  PiS |  RPL |  SLD |  MN
+:---: | ---: | ---: | ---: | ---: | ---: | ---: |---: |
 1  |  Legnica |  5 |  0 |  4 |  1 |  2 |  0
 2  |  Wałbrzych |  5 |  0 |  2 |  1 |  0 |  0
 3  |  Wrocław |  9 |  0 |  4 |  1 |  0 |  0

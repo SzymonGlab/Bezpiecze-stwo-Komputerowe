@@ -66,7 +66,7 @@ W pierwszym przypadku gdy mamy pełną kontrolę nad lokalem wyborczym możemy z
 
 W drugim przypadku, czyli gdy zależy nam na zwycięstwie opozycji musimy doprowadzić do przekroczenia progu wyborczego jak największej ilości partii. Na podstawię sondaży rozgospodarowujemy głosy tak, aby do podziału mandatów zakwalifikowało się jak najwięcej partii, ponieważ potem w metodzie d'Hondta podczas podziału mandatów mniej z nich zostanie przydzielone zwycięzcy (partii która otrzymała w danym okręgu najwięcej głosów).
 
-Sytuacja wygląda inaczej w przypadku, gdy „przedstawiciele” rozmieszczeni są we wszystkich komisjach wyborczych. W takiej sytuacji jesteśmy w stanie manipulować większą ilością głosów. Biorąc pod uwagę dane z roku 2019, w Polsce było 27415 komisji wyborczych, więc jeżeli mamy w każdej z nich przedstawiciela, któremu udałoby się unieważnić 5 kart do głosowania jesteśmy w stanie unieważnić w sumie ponad 120 000 głosów. Podobnie jak w powyższych rozważaniach weźmiemy na tapetę dwa przypadki, pierwszy gdy zależy nam na zwycięstwie partii prowadzącej w sondażach oraz drugi, gdy zależy nam na zwycięstwie opozycji. 
+Sytuacja wygląda inaczej w przypadku, gdy „przedstawiciele” rozmieszczeni są we wszystkich komisjach wyborczych. W takiej sytuacji jesteśmy w stanie manipulować większą ilością głosów. Biorąc pod uwagę dane z roku 2019, w Polsce było 27415 komisji wyborczych, więc jeżeli mamy w każdej z nich przedstawiciela, któremu udałoby się unieważnić 7 kart do głosowania jesteśmy w stanie unieważnić w sumie ponad 190 000 głosów. Podobnie jak w powyższych rozważaniach weźmiemy na tapetę dwa przypadki, pierwszy gdy zależy nam na zwycięstwie partii prowadzącej w sondażach oraz drugi, gdy zależy nam na zwycięstwie opozycji. 
 
 W sytuacji gdy wspieramy lidera sondaży, aby osiągnąć sukces powinniśmy unieważniać głosy oddawane na partię, znajdujące się na granicy progu wyborczego. Mniejsza liczba partii oznacza więcej mandatów dla naszego ugrupowania podczas dzielenia głosów. Natomiast w przeciwnym wypadku gdy zależy nam na zwycięstwie opozycji, taktyka jest prosta - musimy unieważniać głosy oddane na partię, której wynik chcemy obniżyć.
 
@@ -83,6 +83,10 @@ okręg wyborczy | partia	| liczba głosów
 35	Olsztyn	  |KON | 2618
 
 Przy założeniu że do głosowania przystąpiło 18 mln osób, a lokali wyborczych było 27 tysięcy, otrzymujemy średnią liczbę głosów w pojedyńczym lokalu równą 660 głosów. W przypadku gdy kontrolujemy troszkę większy lokal, możemy zmienić wynik wyborów w okręgu 18.
+
+W scenraiuszu anuloawnia głosów zakładamy że w jednym okręgu jesteśmy w stanie anulować 4,5 tysięca głosów. Zakładamy że wszystkie okręgi są takie same, więc liczbę wszystkich możliwych do unieważnienia głosów dzielimy przez 41 (liczbę okręgów). W wielu okręgach jest to liczba pozwalająca na zmianę ugrupowania które otrzyma ostatni mandat.
+
+W tym przypadku istotnie mamy większy wpływ na wynik wyborów, lecz wiąże się to także z działaniem w większej grupie. O ile w zadaniu pierwszym potrzebowaliśmy maksymalnie kilkudziesięciu ludzi do kontorli lokalu, to w przypadku jednego przedstawiciela w każdej komisji jest to ponad 27 tysięcy osób.
 
 
 ## Zadanie 3

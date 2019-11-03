@@ -8,9 +8,8 @@ Zapoznaj się ze skryptem z https://github.com/filipzz/dhondt i  sprawdzić jaki
 Metoda D'Hondta – metoda stosowana do podziału mandatów w systemach wyborczych opartych na proporcjonalnej reprezentacji z listami partyjnymi. Polega on na obliczaniu ilorazu   , gdzie G – to liczba głosów oddanych na partię w danym okręgu , a i to kolejne liczby naturalne. Potem sortujemy otrzymane ilorazy i m pierwszych ilorazów (gdzie m to liczba mandatów w danym okręgu) otrzymuje mandaty. Każda partia otrzymuje tyle mandatów ile ma ilorazów znajdujących się w puli.
 W moim rozwiązaniu zbadałem wyniki z 2011 i z 2005 roku
 
-```
+#### 2015 - WYBORY PARLAMENTARNE
 
-```
 nr okregu | nazwa  |  PO |  PSL |  PiS |  RPL |  SLD |  MN
 :---: | ---: | ---: | ---: | ---: | ---: | ---: |---: |
 1  |  Legnica |  5 |  0 |  4 |  1 |  2 |  0

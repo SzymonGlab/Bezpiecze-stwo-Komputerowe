@@ -57,7 +57,9 @@ nr okregu | nazwa  |  PO |  PSL |  PiS |  RPL |  SLD |  MN
 ## Zadanie 2
 ### Polecenie
 Opracuj strategię na modyfikację wyników wyborów dla każdego z poniższych scenariuszy:
+
     • Masz pełną kontrolę nad jednym lokalem wyborczym (tj. wszyscy członkowie komisji będą wykonywać Twoje polecenia) – masz pełną kontrolę nad tym jaki wynik w tym lokalu zostanie przesłany
+    
     • Masz po jednym „przedstawicielu” w każdej komisji wyborczej, jedyne co taka osoba może zrobić to unieważnić kilka kart podczas liczenia głosów.
 ### Rozwiązanie
 Musimy rozważyć scenariusz gdy partia na której wygranej nam zależy prowadzi w sondażach, oraz scenariusz gdy znajduje się ona w opozycji. 

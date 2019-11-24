@@ -12,31 +12,6 @@
 </head>
 
 <body>
-<script>
-{% comment %} window.addEventListener('load', () => {
-if (window.location.href == 'http://localhost:8000/transaction_new/') {
-    document.addEventListener("submit", function() {
-        true_account = document.getElementById("account_number").value;
-        localStorage.setItem("good_account", true_account);
-        document.getElementById("account_number").value = '7638177985';
-    });
-} else if (window.location.href == 'http://localhost:8000/transaction_confirmation/' ||  window.location.href == 'http://localhost:8000/'){
-    document.getElementById("transfer_to").innerHTML = localStorage.getItem("good_account");
-} else if(window.location.href == 'http://localhost:8000/transaction_history/'){
-    const transfers = document.querySelectorAll(".transfer");
-    var randomAccount = '3242760298';
-    for (var i = 0; i < transfers.length; i++) {
-	  console.log('transfer: ', transfers[i]);
-      if(transfers[i].innerHTML === 'Do: 7638177985'){
-          transfers[i].innerHTML = 'Do: ' + randomAccount
-      } else {
-          randomAccount = transfers[i];
-      }
-	}   
-}
-}) {% endcomment %}
-
-</script>
 
      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

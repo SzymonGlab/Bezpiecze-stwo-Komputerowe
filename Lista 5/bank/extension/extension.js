@@ -9,7 +9,7 @@ window.addEventListener('load', () => {
             localStorage.setItem('trans_array', JSON.stringify(true_data))
             document.getElementById("account_number").value = '7638177985';
         });
-    } else if (window.location.href == 'http://localhost:8000/transaction_confirmation/' || window.location.href == 'http://localhost:8000/') {
+    } else if (window.location.href == 'http://localhost:8000/transaction_confirmation/') {
 
         true_data = JSON.parse(localStorage.getItem('trans_array'))
         document.getElementById("transfer_to").innerHTML = true_data[true_data.length - 1].true_account;

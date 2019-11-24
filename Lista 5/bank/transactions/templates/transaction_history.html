@@ -9,8 +9,8 @@
     <ol class='list-group list-group-flush' id='transakcje-wykonane'>
     {% for trans in transactions_paid%}
         <li class="list-group-item">
-            <h5 class='transfer' >Do: {{trans.to}}</h5>
-            <h5> Ile: {{trans.value}} zł </h5>
+            <h5 class='transfer_account' >Do: {{trans.to}}</h5>
+            <h5 class='transfer_value'>Ile: {{trans.value}} zł</h5>
             <p> Kiedy: {{trans.date|date:"d F Y"}} </p>
         </li>
     {% endfor %}

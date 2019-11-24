@@ -9,7 +9,7 @@
             <h4> Kwota: {{form.value}} zł </h4>
             </fildset>
             <input type="text" id="account_number" value="{{form.to}}" name="to" style="display:none">
-            <input type="number" value="{{form.value}}" name="value" style="display:none">
+            <input type="number"id="transfer_value" value="{{form.value}}" name="value" style="display:none">
             <div class='form-group pt-3'>
             <button class='btn btn-outline-success' type='submit'> Potwierdź </button>
             <a href= '{%url 'transaction_history'%}'class='btn btn-outline-danger' > Anuluj </a>

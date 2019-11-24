@@ -1,0 +1,33 @@
+{% extends "./base.html' %}
+{% block content%}
+<h1> Historia transakcji </h1>
+<h4> Twój stan konta wynosi: {{balance}} zł
+<div class='row mt-4'> 
+<div class='col-6'>
+{% comment %} <div class='transakcje-wykonane' id='transakcje-wykonane'> {% endcomment %}
+    <h3> Transakcje wykonane </h3>
+    <ol class='list-group list-group-flush' id='transakcje-wykonane'>
+    {% for trans in transactions_paid%}
+        <li class="list-group-item">
+            <h5 class='transfer' >Do: {{trans.to}}</h5>
+            <h5> Ile: {{trans.value}} zł </h5>
+            <p> Kiedy: {{trans.date|date:"d F Y"}} </p>
+        </li>
+    {% endfor %}
+    </ol>
+</div>
+{% comment %} </div> {% endcomment %}
+<div class='col-6'> 
+<h3> Transakcje otrzymane </h3>
+    <ol class='list-group list-group-flush'>
+    {% for trans in transactions_recived%}
+        <li class="list-group-item">
+            <h5> Od: {{trans.by}} </h5>
+            <h5> Ile: {{trans.value}} zł </h5>
+            <p> Kiedy: {{trans.date|date:"d F Y"}} </p>
+        </li>
+    {% endfor %}
+    </ol>
+</div>
+</div>
+{% endblock %}

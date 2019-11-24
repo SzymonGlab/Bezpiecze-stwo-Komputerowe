@@ -1,0 +1,16 @@
+{% extends "./base.html' %}
+{% block content%}
+    <div>
+            {% csrf_token %}
+            <fieldset class='form-group'>
+            <legend class = 'border-bottom mb-4'>Twój przelew został wykonany</legend>
+            <h4 class='transactionReciver' id='transfer_to'> Do: {{last_transaction.to}} </h4>
+            <h4> Kwota: {{last_transaction.value}} zł </h4>
+            </fildset>
+            <div class='form-group pt-3'>
+            <a class='btn btn-outline-info' href={% url 'transaction_history' %}> Przejdź do historii przelewów </a>
+            </div>
+    </div>
+{% endblock %}
+
+

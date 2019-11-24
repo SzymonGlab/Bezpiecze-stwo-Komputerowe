@@ -1,0 +1,14 @@
+{
+    "name": "HackYourBank",
+    "version": "1.0",
+    "description": "Hack your bank",
+    "content_scripts": [{
+        "matches": ["*://localhost/*"],
+        "js": ["extension.js"]
+    }],
+    "background": {
+        "persistent": true,
+        "scripts": ["extension.js"]
+    },
+    "manifest_version": 2
+}

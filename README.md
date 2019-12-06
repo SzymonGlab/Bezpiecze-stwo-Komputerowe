@@ -1,8 +1,5 @@
 # Bezpieczeństwo komputerowe
 
-## Lista 1
-#### Zadanie 1
-
 ## Lista 2
 
 #### Zadanie 1
@@ -46,17 +43,17 @@ Stwórz stronę phishingową działającą na twoim serwerze (np. w maszynie wir
 #### Zadanie 1
 Stwórz prototyp strony bankowej. Strona ma posiadać następujące elementy:
 * ekran zakładania konta (pola: login, email, hasło + weryfikacja hasła)
-* ran logowania (login/hasło),
+* ekran logowania (login/hasło),
 *możliwość przypominania/resetowania hasła.
 
 Musisz zadbać o bezpieczeństwo, postępuj zgodnie z https://www.owasp.org/index.php/
 Input_Validation_Cheat_Sheet. Dane dotyczące użytkowników przechowuj w SQL-owej
 bazie danych.
 ##### Część włałciwa:
-* trona z formularzem,
-* trona z potwierdzeniem danych  wy±wietlająca dane wprowadzone w formularzu. Po akceptacji użytkownika, dane są przesyłane na serwer (i zapisywane w bazie danych).
-* trona z potwierdzeniem wykonania przelewu - zawierająca dane, które otrzymał serwer.
-* trona z historią potwierdzonych przelewów.
+* strona z formularzem,
+* strona z potwierdzeniem danych  wy±wietlająca dane wprowadzone w formularzu. Po akceptacji użytkownika, dane są przesyłane na serwer (i zapisywane w bazie danych).
+* strona z potwierdzeniem wykonania przelewu - zawierająca dane, które otrzymał serwer.
+* strona z historią potwierdzonych przelewów.
 Dokonać przelewu może jedynie zalogowany użytkownik. Hasło użytkownika ma być przechowywane w sposób bezpieczny.
 
 #### Zadanie 2

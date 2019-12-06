@@ -7,22 +7,22 @@
 
 #### Zadanie 1
 Zadanie można wykonywa¢ w grupach max 2-osobowych. Skofiguruj w odpowiedni sposób laptopa, udaj się z nim w publiczne miejsce i udostępnij publicznie otwartą sieć bezprzewodową (przeprowadź testy z różnymi nazwami SSID). Sporządźcie raport zawierający:
-1. listę poszukiwanych SSID sieci, do których chciaªy si¦ podª¡czy¢ urz¡dzenia;
-2. statystyk¦ okre±laj¡c¡ nazw¦ udost¦pnianej (przez Ciebie) sieci i liczbę urządzeń, które
+* listę poszukiwanych SSID sieci, do których chciały się podłązyć urządzenia;
+* statystykę określającą nazwę udostępnianej (przez Ciebie) sieci i liczbę urządzeń, które
 się do niej podłączyły (na podstawie pakietów DNS),
-3. listę stron www odwiedzonych przez u»ytkowników sieci,
-4. listę protokoóów i usług, z których korzystali u»ytkownicy sieci - jeżeli protokół nie
+* listę stron www odwiedzonych przez u»ytkowników sieci,
+* listę protokołów i usług, z których korzystali użtkownicy sieci - jeżeli protokół nie
 wykorzystywał szyfrowania, to sporządź listę usług/serwisów/stron do których możnaby
 było zdobyć dostęp wykorzystuj¡c przesłane niezaszyfrowane loginy i hasła.
-5. mapę lokalizacji, z którymi łączyły się komputery (wykorzystaj do tego celu programy
+* mapę lokalizacji, z którymi łączyły się komputery (wykorzystaj do tego celu programy
 np: traceroute, visualroute itp.).
 Raport ma być wiarygodny: tj. zostaniesz zostać poproszona/poproszony o pokazanie odpowiadających danych źródłowych.
 
 #### Zadanie 2
 Napisz aplikację (skrypt) przechwytującą nieszyfrowane sesje www (wykorzystaj np. Wireshark). Program ma:
-(1) nasłuchiwać ruch sieciowy,
-(2) wynajdywać identyfikatory sesji (dla predefiniowanych stron), a następnie (po wybraniu)
-(3) zmieniać odpowiednie wpisy w ciasteczkach Twojej ulubionej przeglądarki tak, aby mo»na byªo się podszyć
+* nasłuchiwać ruch sieciowy,
+* wynajdywać identyfikatory sesji (dla predefiniowanych stron), a następnie (po wybraniu)
+* zmieniać odpowiednie wpisy w ciasteczkach Twojej ulubionej przeglądarki tak, aby mo»na byªo się podszyć
 pod podsłuchaną sesję.
 
 Wykorzystaj np. programy tcpdump i aircrack (dla sieci zabezpieczonych WEP/WPA). Możesz skorzystać z danych zebranych w zadaniu nr 1.
@@ -45,18 +45,18 @@ Stwórz stronę phishingową działającą na twoim serwerze (np. w maszynie wir
 ## Lista 5
 #### Zadanie 1
 Stwórz prototyp strony bankowej. Strona ma posiadać następujące elementy:
-• ekran zakładania konta (pola: login, email, hasło + weryfikacja hasła)
-• ekran logowania (login/hasło),
-• możliwość przypominania/resetowania hasła.
+* ekran zakładania konta (pola: login, email, hasło + weryfikacja hasła)
+* ran logowania (login/hasło),
+*możliwość przypominania/resetowania hasła.
 
 Musisz zadbać o bezpieczeństwo, postępuj zgodnie z https://www.owasp.org/index.php/
 Input_Validation_Cheat_Sheet. Dane dotyczące użytkowników przechowuj w SQL-owej
 bazie danych.
 ##### Część włałciwa:
-• strona z formularzem,
-• strona z potwierdzeniem danych  wy±wietlająca dane wprowadzone w formularzu. Po akceptacji użytkownika, dane są przesyłane na serwer (i zapisywane w bazie danych).
-• strona z potwierdzeniem wykonania przelewu - zawierająca dane, które otrzymał serwer.
-• strona z historią potwierdzonych przelewów.
+* trona z formularzem,
+* trona z potwierdzeniem danych  wy±wietlająca dane wprowadzone w formularzu. Po akceptacji użytkownika, dane są przesyłane na serwer (i zapisywane w bazie danych).
+* trona z potwierdzeniem wykonania przelewu - zawierająca dane, które otrzymał serwer.
+* trona z historią potwierdzonych przelewów.
 Dokonać przelewu może jedynie zalogowany użytkownik. Hasło użytkownika ma być przechowywane w sposób bezpieczny.
 
 #### Zadanie 2

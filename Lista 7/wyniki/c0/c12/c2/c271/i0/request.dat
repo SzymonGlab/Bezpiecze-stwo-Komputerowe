@@ -1,0 +1,12 @@
+POST /transaction_new/ HTTP/1.1
+Host: 127.0.0.1:8000
+Accept-Encoding: gzip
+Connection: keep-alive
+User-Agent: Mozilla/5.0 SF/2.10b
+Range: bytes=0-399999
+Referer: http://127.0.0.1/
+Cookie: csrftoken=WPRdjLKwozjjx29KVKcmiWLOh4wStnZTqZZKgbyr9ERo2svLicmxrnZHWIRs3QG0; sessionid=""
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 102
+
+csrfmiddlewaretoken=RU9ISDXx4w1ATjGOGoBiZ7UNNoOr7PIGTleFLCgIjSSAwjTpv0XtWZLvv7khC8Oy&to=1&value=reload

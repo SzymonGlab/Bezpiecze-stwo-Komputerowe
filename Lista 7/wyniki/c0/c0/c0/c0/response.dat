@@ -1,0 +1,13 @@
+HTTP/1.1 302 Found
+Date: Thu, 12 Dec 2019 16:36:13 GMT
+Server: WSGIServer/0.2 CPython/3.6.9
+Content-Type: text/html; charset=utf-8
+Location: /transaction_history/
+Expires: Thu, 12 Dec 2019 16:36:13 GMT
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Vary: Cookie
+X-Frame-Options: SAMEORIGIN
+Content-Length: 0
+Set-Cookie: csrftoken=yDJmsd9YlkGOAib0s7HUM0wdSQDNP3H8XKMI7VQ7XS4USgMljvJebYbOfTqfnyS7; expires=Thu, 10 Dec 2020 16:36:13 GMT; Max-Age=31449600; Path=/; SameSite=Lax
+Set-Cookie: sessionid=3plas6vo3bruf2l0b34dy2kvra8692l1; expires=Thu, 26 Dec 2019 16:36:13 GMT; HttpOnly; Max-Age=1209600; Path=/; SameSite=Lax
+

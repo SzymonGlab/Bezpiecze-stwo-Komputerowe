@@ -69,3 +69,11 @@ Przechwyciłeś kilkanaście kryptogramów. Wiesz, że każdy z nich powstał ja
 dla i = 1 . . . l, gdzie G jest generatorem bitów pseudolosowych, a k jest kluczem tajnym.
 Napisz program, który przyjmuje na wejściu l kryptogramów zaszyfrowanych za pomocą szyfru strumieniowego z tym samym kluczem. Na
 wyjściu program ma zwrócić teksty jawne.
+
+## Lista 7
+#### Zadanie 1
+Zainstaluj skaner skipfish i wykonaj pełen skan (ze słownikiem complete.wl)
+swojej strony bankowej (z poprzedniej listy). Zachowaj wyniki skanu i zapoznaj się z nimi.
+(Pamiętaj, aby umożliwi¢ skipfish'owi zalogowanie się do serwisu). Jakie ataki na Twój serwis
+były możliwe, jakie mogłyby być ich skutki, co było ich przyczyną, co należałoby zmienić,
+aby ich unikąć?

@@ -1,0 +1,37 @@
+{% extends "./base.html' %}
+{% block content%}
+<h1> Transakcje </h1>
+<div class='row mt-4'> 
+<div class='col-6'>
+    <h3> Transakcje do zaakceptowania </h3>
+    <form method="POST" action="/transaction_accept/">
+        {% csrf_token %}
+    <ol class='list-group list-group-flush' id='transakcje-wykonane'>
+    {% for trans in transactions_to_accept%}
+        <a href="{% url 'transaction_accept' trans.id %}">
+            <li class="list-group-item">
+                <h5 class='transfer_account' >Od: {{trans.by}}</h5>
+                <h5 class='transfer_account' >Do: {{trans.to}}</h5>
+                <h5 class='transfer_value'>Ile: {{trans.value}} zł</h5>
+                <p> Kiedy: {{trans.date|date:"d F Y"}} </p>
+            </li>
+        </a>
+    {% endfor %}
+    </ol>
+    </form>
+</div>
+<div class='col-6'> 
+<h3> Transakcje zaakceptowane </h3> 
+    <ol class='list-group list-group-flush'>
+    {% for trans in transactions_accepted%}
+        <li class="list-group-item">
+            <h5> Od: {{trans.by}} </h5>
+            <h5> Do: {{trans.to}} </h5>
+            <h5> Ile: {{trans.value}} zł </h5>
+            <p> Kiedy: {{trans.date|date:"d F Y"}} </p>
+        </li>
+    {% endfor %}
+    </ol>
+</div>
+</div>
+{% endblock %}

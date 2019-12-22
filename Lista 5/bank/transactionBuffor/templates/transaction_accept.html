@@ -1,0 +1,17 @@
+# request.session.flush(){% extends "./base.html' %}
+{% block content%}
+    <div>
+        <form action="/transaction_buffor/" method="POST">
+        {% csrf_token %}
+        <label for="od"> Od </label>
+        <input type="text" name="od" readonly="readonly" value="{{sender}}" />
+        <label for="do"> Do </label>
+        <input type="text" name="do" readonly="readonly" value="{{reciver}}" />
+        <label for="ile"> Ile </label>
+        <input type="text" name="ile" readonly="readonly" value="{{ammount}}" />
+        <button class="btn btn-success ml-3" type="submit"> ZATWIERDŹ</button>
+    </form>
+    </div>
+{% endblock %}
+
+

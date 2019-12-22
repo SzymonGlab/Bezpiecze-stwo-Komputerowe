@@ -18,7 +18,7 @@ def new_transaction(request):
     
 @login_required
 def transaction_history(request):
-    received = Transaction.objects.filter(to = request.user.client).order_by('-date')
+    received = Transaction.objects.filter(to = request.user.client, accepted=True).order_by('-date')
     paid =  Transaction.objects.filter(by = request.user.client).order_by('-date')
     balance = request.user.client.balance
     context = {

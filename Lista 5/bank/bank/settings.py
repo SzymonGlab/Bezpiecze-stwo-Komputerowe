@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'transactionBuffor.apps.TransactionbufforConfig',
     'transactions.apps.TransactionsConfig',
     'users.apps.UsersConfig',
     'crispy_forms',
@@ -58,7 +59,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': ['./users/templates',
-                './templates'],
+                './templates',
+                './transactionBuffor/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

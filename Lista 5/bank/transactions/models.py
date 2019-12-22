@@ -40,6 +40,7 @@ class Transaction(models.Model):
     to = models.ForeignKey(Client, on_delete=models.CASCADE, related_name="to_client")
     value = models.PositiveIntegerField()
     date = models.DateTimeField(auto_now=True)
+    accepted = models.BooleanField(default=False)
     
     def __str__(self):
         return  "%s -> %s: %d zł" % (self.by, self.to, self.value)

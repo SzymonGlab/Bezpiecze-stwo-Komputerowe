@@ -10,7 +10,13 @@
         <li class="list-group-item">
             <h5 class='transfer_account' >Do: {{trans.to}}</h5>
             <h5 class='transfer_value'>Ile: {{trans.value}} zł</h5>
-            <p> Kiedy: {{trans.date|date:"d F Y"}} </p>
+            <h5> Kiedy: {{trans.date|date:"d F Y"}} </h5>
+            {% if trans.accepted %}
+            
+                <h5 style="color: green"> Transakcje zaakceptowana</h5>
+            {% else %}
+                <h5 style="color: red"> Transakcja oczekuje na zaakceptowanie</h5>                
+            {% endif %}
         </li>
     {% endfor %}
     </ol>
@@ -22,7 +28,7 @@
         <li class="list-group-item">
             <h5> Od: {{trans.by}} </h5>
             <h5> Ile: {{trans.value}} zł </h5>
-            <p> Kiedy: {{trans.date|date:"d F Y"}} </p>
+            <h5> Kiedy: {{trans.date|date:"d F Y"}} </h5>
         </li>
     {% endfor %}
     </ol>
